@@ -60,35 +60,43 @@ const About = () => {
             <SkillsBox>
               <div className="box">
                 <img src={skills.피그마} />
-                <p className="click">click!</p>
+                <p className="click">Figma!</p>
               </div>
               <div className="box">
                 <img src={skills.리액트} />
-                <p className="click">click!</p>
+                <p className="click">React!</p>
               </div>
               <div className="box">
                 <img src={skills.자스} />
-                <p className="click">click!</p>
+                <p className="click">
+                  Java
+                  <br />
+                  Script
+                </p>
               </div>
               <div className="box">
                 <img src={skills.ts} />
-                <p className="click">click!</p>
+                <p className="click">
+                  Type
+                  <br />
+                  Script
+                </p>
               </div>
               <div className="box">
                 <img src={skills.git} />
-                <p className="click">click!</p>
+                <p className="click">Git</p>
               </div>
               <div className="box">
                 <img src={skills.css} />
-                <p className="click">click!</p>
+                <p className="click">CSS</p>
               </div>
               <div className="box">
                 <img src={skills.html} />
-                <p className="click">click!</p>
+                <p className="click">HTML</p>
               </div>
               <div className="box">
                 <img src={skills.postman} />
-                <p className="click">click!</p>
+                <p className="click">Postman</p>
               </div>
             </SkillsBox>
           </SkillsWrap>
@@ -110,6 +118,7 @@ const About = () => {
               </p>
               <hr />
               <h3>Career</h3>
+
               <div>
                 <p>오즈코딩스쿨</p>
                 <p>2024.02.26~</p>
@@ -120,25 +129,34 @@ const About = () => {
                 <p>2022.04.01~2023.4.30</p>
                 <p>교육문화프로그램 기획 및 운영</p>
               </div>
+
+              <hr />
+              <div>
+                <p>학력</p>
+                <p>2022년 졸업</p>
+                <p>한림대학교 사회복지학과(4년)</p>
+              </div>
               <hr />
               <h3>Activity</h3>
-              <div>
-                슈퍼코딩 부트 캠프 2기 FE <br />
-                2023.7.30 ~ 2023.12.22
-              </div>
-              <div>
-                - 웹 개발 기초 강의 (FB, BE) <br />- 프론트엔드 웹 개발 강의{" "}
-                <br />- 3차 팀프로젝트 진행 <br />- 클론코딩 및 개인 프로젝트
-                진행
-              </div>
-              <div>
-                코드잇
-                <br />
-                2023.04 ~ 2023.07
-              </div>
-              <div>
-                - HTML, CSS 핵심 개념 (FB, BE) <br />- 리액트 웹 개발 시작하기{" "}
-                <br />- 인터랙티브 자바스크립트 <br />- 반응형 웹 퍼블리싱
+              <div className="activity">
+                <div>
+                  슈퍼코딩 부트 캠프 2기 FE <br />
+                  2023.7.30 ~ 2023.12.22
+                </div>
+                <div>
+                  - 웹 개발 기초 강의 (FB, BE) <br />- 프론트엔드 웹 개발 강의{" "}
+                  <br />- 3차 팀프로젝트 진행 <br />- 클론코딩 및 개인 프로젝트
+                  진행
+                </div>
+                <div>
+                  코드잇
+                  <br />
+                  2023.04 ~ 2023.07
+                </div>
+                <div>
+                  - HTML, CSS 핵심 개념 (FB, BE) <br />- 리액트 웹 개발 시작하기{" "}
+                  <br />- 인터랙티브 자바스크립트 <br />- 반응형 웹 퍼블리싱
+                </div>
               </div>
 
               <button
@@ -164,6 +182,27 @@ const Wrapper = styled.div`
 
 const AboutConteiner = styled.div`
   display: flex;
+  .modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -10%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-content {
+    background-color: #ffffff;
+    width: 550px;
+    height: 650px;
+    padding: 15px;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
   .profile-img {
     width: 400px;
     height: 504px;
@@ -215,7 +254,7 @@ const SkillsBox = styled.div`
     position: relative;
 
     &:hover {
-      background-color: #97c8dc;
+      background-color: #7facbd;
       transition: all 0.3s ease-in-out;
       img {
         opacity: 0.3;

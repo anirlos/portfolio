@@ -6,7 +6,10 @@ const Contact = () => {
     <ContactWrap>
       <h2>Contact</h2>
       <h1>anirlos161@naver.com</h1>
-      <div className="email">메일 보내기</div>
+      <div className="email">
+        <a href="mailto:anirlos161@naver.com"> 👉 메일 보내기</a>
+      </div>
+
       <p>
         역량과 경험을 갖춘 꾸준히 성실한 웹 퍼블리셔&프론트엔드를 찾고 계시다면,
         언제든지 연락주세요!
@@ -25,9 +28,23 @@ export default Contact;
 const ContactWrap = styled.div`
   margin-top: 70px;
   margin-left: 100px;
+  a {
+    display: block;
+    color: white;
+  }
   .email {
-    margin: 50px;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
     font-size: 22.6px;
+    background-color: #5776b1;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 2px 7px rgba(0, 0, 0, 0.22);
+    padding: 10px;
+    border-radius: 10px;
+    &:hover {
+      background-color: #7190c9;
+    }
   }
   h2 {
     font-size: 31.99px;

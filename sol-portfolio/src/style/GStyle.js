@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     outline: none;
     color: #000;
+  
   }
 
   a:visited, a:active{color: #000}
