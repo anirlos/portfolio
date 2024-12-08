@@ -140,6 +140,17 @@ const About = () => {
               <h3>Activity</h3>
               <div className="activity">
                 <div>
+                  Developing on AWS <br />
+                  2024.4.5
+                </div>
+                <div>
+                  - 엔드 투 엔드 클라우드 애플리케이션 구축 <br /> - AWS
+                  Identity and Access Management&#40;IAM&#41; 권한 구성 <br />-
+                  Amazon S3 및 Amazon DynamoDB 리소스에 대해 CRUD <br />-
+                  애플리케이션에서 여러 프로그래밍 파트너를 사용하여 AWS 서버에
+                  액세스 진행
+                </div>
+                <div>
                   슈퍼코딩 부트 캠프 2기 FE <br />
                   2023.7.30 ~ 2023.12.22
                 </div>
@@ -258,6 +269,8 @@ const SkillsBox = styled.div`
       transition: all 0.3s ease-in-out;
       img {
         opacity: 0.3;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25),
+          0 2px 7px rgba(0, 0, 0, 0.22);
       }
       p {
         transition: all 0.3s ease-in-out;
